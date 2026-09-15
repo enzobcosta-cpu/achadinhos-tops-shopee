@@ -15,5 +15,5 @@
   A chave pública/anon é a apropriada para o navegador.
 */
 
-const SUPABASE_URL = "COLE_AQUI_A_URL_DO_SEU_PROJETO";
-const SUPABASE_ANON_KEY = "COLE_AQUI_A_CHAVE_PUBLICA_ANON";
+const SUPABASE_URL = "https://frurcgnbbsrfanpgcwct.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_Os-1uruduBjlElRV8C9C_Q_nGXDyfw-";
