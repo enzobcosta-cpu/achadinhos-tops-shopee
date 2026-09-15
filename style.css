@@ -1,0 +1,341 @@
+/* ============================================================
+   ACHADINHOS TOPS SHO — ESTILO PROFISSIONAL
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --orange: #ff6500;
+  --orange-light: #ff9d00;
+  --yellow: #ffd500;
+  --navy: #111827;
+  --white: #ffffff;
+  --shadow: rgba(17, 24, 39, .25);
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(255, 213, 0, .35), transparent 24%),
+    radial-gradient(circle at 90% 25%, rgba(255, 255, 255, .18), transparent 22%),
+    linear-gradient(145deg, #ff4f00, #ff7200 48%, #ff9c00);
+  color: var(--white);
+}
+
+.page {
+  width: min(100% - 30px, 620px);
+  margin: auto;
+  padding: 28px 0 40px;
+  text-align: center;
+}
+
+.profile {
+  margin-bottom: 25px;
+}
+
+.logo {
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 7px solid white;
+  box-shadow: 0 12px 35px var(--shadow);
+}
+
+.profile h1 {
+  margin-top: 18px;
+  font-size: clamp(30px, 7vw, 44px);
+  font-weight: 950;
+  line-height: 1.05;
+  text-shadow: 3px 4px 0 rgba(0,0,0,.25);
+}
+
+.profile h1 span {
+  color: var(--yellow);
+}
+
+.profile p {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-height: 78px;
+  padding: 12px 19px;
+  border: 3px solid var(--navy);
+  border-radius: 45px;
+  background: linear-gradient(135deg, #ff4f00, #ff9500);
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 8px 0 var(--navy), 0 14px 28px var(--shadow);
+  transition: .18s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 11px 0 var(--navy), 0 18px 30px var(--shadow);
+}
+
+.link-icon {
+  width: 51px;
+  height: 51px;
+  min-width: 51px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--navy);
+  font-size: 25px;
+}
+
+.link-text {
+  flex: 1;
+  text-align: left;
+}
+
+.link-text strong,
+.link-text small {
+  display: block;
+}
+
+.link-text strong {
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.link-text small {
+  margin-top: 3px;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.arrow {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.status {
+  padding: 20px;
+  font-weight: 800;
+}
+
+footer {
+  margin-top: 35px;
+  padding-top: 20px;
+  border-top: 2px solid rgba(255,255,255,.35);
+}
+
+footer span {
+  display: block;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+/* ============================================================
+   PAINEL
+   ============================================================ */
+
+.admin-page {
+  width: min(100% - 30px, 700px);
+  margin: auto;
+  padding: 30px 0 50px;
+}
+
+.panel {
+  background: white;
+  color: var(--navy);
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 18px 45px var(--shadow);
+}
+
+.admin-logo {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  border: 5px solid var(--orange);
+}
+
+.panel h1 {
+  margin-bottom: 7px;
+}
+
+.panel p {
+  color: #5b6472;
+}
+
+form {
+  margin-top: 22px;
+}
+
+label {
+  display: block;
+  margin: 13px 0 6px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d2d6dc;
+  border-radius: 11px;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(255,101,0,.12);
+}
+
+button {
+  font-family: inherit;
+}
+
+.primary,
+.secondary,
+.delete,
+.move-buttons button {
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.primary {
+  width: 100%;
+  margin-top: 18px;
+  padding: 13px;
+  background: var(--orange);
+  color: white;
+}
+
+.secondary {
+  padding: 11px 15px;
+  background: var(--navy);
+  color: white;
+}
+
+.dashboard-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.editor-card {
+  margin-bottom: 14px;
+  padding: 16px;
+  border: 2px solid #ffd0ad;
+  border-radius: 18px;
+  background: #fff7f0;
+}
+
+.editor-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.move-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.move-buttons button {
+  width: 35px;
+  height: 35px;
+  background: #ffe1cc;
+  color: var(--navy);
+}
+
+.delete {
+  margin-top: 13px;
+  padding: 10px 13px;
+  background: #dc2626;
+  color: white;
+}
+
+.switch {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.switch input {
+  width: auto;
+}
+
+.actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.message {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.empty-admin {
+  padding: 20px 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding-top: 18px;
+  }
+
+  .logo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .link-card {
+    min-height: 70px;
+    padding: 10px 14px;
+  }
+
+  .link-icon {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+  }
+
+  .link-text strong {
+    font-size: 16px;
+  }
+
+  .link-text small {
+    font-size: 11px;
+  }
+
+  .dashboard-head {
+    flex-direction: column;
+  }
+}

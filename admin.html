@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff6500">
+  <title>Painel — Achadinhos Tops Sho</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="admin-page">
+    <section id="login-card" class="panel">
+      <img src="logo.jpeg" alt="Logo" class="admin-logo">
+      <h1>Painel de administração</h1>
+      <p>Entre para gerenciar os links da sua página.</p>
+
+      <form id="login-form">
+        <label>E-mail</label>
+        <input id="email" type="email" required placeholder="seu@email.com">
+
+        <label>Senha</label>
+        <input id="password" type="password" required placeholder="Sua senha">
+
+        <button type="submit" class="primary">Entrar</button>
+        <p id="login-message" class="message"></p>
+      </form>
+    </section>
+
+    <section id="dashboard" class="panel hidden">
+      <div class="dashboard-head">
+        <div>
+          <h1>Meus links</h1>
+          <p>As alterações aparecem na página pública.</p>
+        </div>
+        <button id="logout" class="secondary">Sair</button>
+      </div>
+
+      <div id="link-editor"></div>
+
+      <div class="actions">
+        <button id="add" class="secondary">＋ Adicionar link</button>
+        <button id="save" class="primary">💾 Salvar alterações</button>
+      </div>
+
+      <p id="save-message" class="message"></p>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
